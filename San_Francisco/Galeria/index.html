@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang=pl>
+<head>
+<title>San Francisco</title>
+<meta charset=utf-8>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="../img/f.ico">
+<link rel="stylesheet" href="../css/NF.css">
+<link rel="stylesheet" href="slide.css">
+<body><a id="gora"></a>
+<div class="topnav" id="myTopnav">
+  <a href="../index.html" class="active; a" style="display:block"><img src="../img/logo.png" alt="Herb San Francisco" id="logo"></a>
+  <a href="../Media/index.html"  class="a">Filmy i Muzyka</a>
+  <a href="../Ankieta/index.html" class="a">Ankieta</a>
+</div>
+<div class="topnav" id="myTopnav1">
+  </div>
+<div id="name"><h2>San Francisco</h2></div>
+<div></div>
+<div id="slide1">
+<div class="slideshow-container" id="tak1">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    
+    <img src="../img/fcity.jpg" style="width:100%" alt="Obrazek 1">
+    <div class="text">Caption One</div>
+  </div>
+
+  <div class="mySlides fade">
+    
+    <img src="../img/gcity.jpg" style="width:100%" alt="Obrazek 2">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    
+    <img src="../img/acity.jpg" style="width:100%" alt="Obrazek 3">
+    <div class="text">Caption Three</div>
+  </div>
+  <div class="mySlides fade">
+    
+    <img src="../img/bcity.jpg" style="width:100%" alt="Obrazek 4">
+    <div class="text">Caption Four</div>
+  </div>
+  <div class="mySlides fade">
+    
+    <img src="../img/ccity.jpg" style="width:100%" alt="Obrazek 5">
+    <div class="text">Caption Five</div>
+  </div>
+  <div class="mySlides fade">
+    
+    <img src="../img/dcity.jpg" style="width:100%" alt="Obrazek 6">
+    <div class="text">Caption Six</div>
+  </div>
+  <div class="mySlides fade">
+    
+    <img src="../img/ecity.jpg" style="width:100%" alt="Obrazek 7">
+    <div class="text">Caption Seven</div>
+  </div>
+  <div class="mySlides fade">
+    
+    <img src="../img/hcity.jpg" style="width:100%" alt="Obrazek 8">
+    <div class="text">Caption Eight</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+</div>
+</div>
+<div id="footer">Wykonał Wojciech Bojakowski klasa 2TB</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
