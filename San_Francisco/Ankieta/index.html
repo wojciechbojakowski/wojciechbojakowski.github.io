@@ -23,30 +23,31 @@
 <div class="topnav" id="myTopnav1">
   </div>
 <div id="name"><h2>San Francisco</h2></div>
-<div>
+<div class="Tekst">
 <form action="*">
 <h2>Ankieta</h2>
-<h3>Płeć</h3>
+<ol>
+<li><h3>Płeć</h3>
 	<input type="radio" id="male" name="gender" value="male" checked>
 	<label for="male">Mężczyzna</label><br> 
 	<input type="radio" id="female" name="gender" value="female">
 	<label for="female">Kobieta</label><br>
 	<input type="radio" id="other" name="gender" value="other">
-	<label for="other">Inna</label><br>
-<h3>Jak bardzo podoba Ci się San Francisco?</h3>
+	<label for="other">Inna</label><br></li>
+<li><h3>Jak bardzo podoba Ci się San Francisco?</h3>
 	<label for="vol">Wybierz wartość od 0 do 10:<br>(gdzie 10 oznacza bardzo się podoba, a 0 że się nie podoba)<br></label>
-	<input type="range" id="vol" name="vol" min="0" max="10"><br>
-<h3>Czy byłeś/byłaś kiedyś w San Francisco?</h3>
+	<input type="range" id="vol" name="vol" min="0" max="10"><br></li>
+<li><h3>Czy byłeś/byłaś kiedyś w San Francisco?</h3>
 	<input type="radio" id="yes" name="answer" value="yes" >
 	<label for="yes">TAk</label><br> 
 	<input type="radio" id="no" name="answer" value="no">
 	<label for="no">Nie</label><br>
 	<input type="radio" id="other1" name="answer" value="not_answer" checked>
-	<label for="other">Wolę nie odpowiadać na to pytanie</label><br>	
-<h3>Jesli tak to kiedy to było(ostatni pobyt)</h3>
+	<label for="other">Wolę nie odpowiadać na to pytanie</label><br></li>	
+<li><h3>Jesli tak to kiedy to było(ostatni pobyt)</h3>
 	<label for="quantity2"></label>
-	<input type="number" id="quantity2" name="quantity2" min="1898" max="2022"><br>
-<h3>W skali od 1 do 10 oceń tę stronę internetową</h3>	
+	<input type="number" id="quantity2" name="quantity2" min="1898" max="2022"><br></li>
+<li><h3>W skali od 1 do 10 oceń tę stronę internetową</h3>	
 	<label for="cars">Wybierz</label>
 	<select id="cars" name="cars">
     <option value="volvo">1</option>
@@ -59,9 +60,10 @@
 	<option value="audi">8</option>
 	<option value="audi">9</option>
 	<option value="audi">10</option>
-	</select><br><br>
-<h3>Jeśli chcesz coś nam przekazać</h3>
+	</select><br><br></li>
+<li><h3>Jeśli chcesz coś nam przekazać</h3>
 	<label>Napisz coś od siebie:  <textarea name="message" rows="10" cols="30">Napisz nam co Ci chodzi po głowie</textarea></label><br><br>
+</li></ol>
 <h3>Wysyłanie</h3>	<a id="about"></a>
 <input type="submit" value="Wyślij">
 
