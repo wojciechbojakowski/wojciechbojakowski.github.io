@@ -284,7 +284,11 @@ body {
 }
 @media only screen and (min-width: 414px) {
 	.title{
-		display;block;
+		display:block;
+		padding-top:0px;
+		padding-bottom:0px;
+		padding-left:5px;
+		padding-right:5px;
 	}
 	.accordion{
 		display:none;
